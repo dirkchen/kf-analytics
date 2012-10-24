@@ -1,16 +1,23 @@
-1. 
-Put FreqCounter.py in one folder with vocabulary (.txt) and the file
+1. Input
+Put VocabFreq.py in one folder with vocabulary (.txt) and the file
 that needs to be parsed (.csv). Names of these files are not important.
 The original folder must have three files:
--FreqCounter.py
--Vocabulary of .txt format (space separated words/phrases)
--Excel file of .csv format (only third column will be processed)
+- VocabFreq.py
+- Vocabulary of .txt format (line separated words/phrases)
+- Excel file of .csv format
 
-2.
-Double-click FreqCounter.py, it will produce a file (.txt) with 
-the same name as original .csv file
+2. Run the program
+To run the program, double-click VocabFreq.py, or type in
+		python VocabFreq.py
+in command line.
 
-3.
-The output file contains ONLY the frequency of words that 
-were menitoned in the original .csv file according to the vocabulary.
-Other words that had zero frequency are omitted in the output file
+3. Output
+It will produce three .csv output files:
+- freq_summary.csv: summary of vocabulary frequency in this dataset
+- freq_by_note.csv: vocabulary frequency by individual notes (notes
+are distinguished by their ids)
+- freq_by_author.csv: vocabulary frequency by authors (authors are 
+distinguished by names)
+
+Note: You need to delete or move away output files before 
+running this analysis again.

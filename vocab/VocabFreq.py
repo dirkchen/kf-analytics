@@ -92,8 +92,8 @@ file_csv.close()
 
 # Output collected frequencies to .csv files
 # Authors frequencies
-shutil.copyfile(glob.glob('*.csv')[0], 'student_output.csv')
-write_students_to = open('student_output.csv', 'w')
+shutil.copyfile(glob.glob('*.csv')[0], 'freq_by_author.csv')
+write_students_to = open('freq_by_author.csv', 'w')
 writer_students_csv = csv.writer(write_students_to, dialect = 'excel')
 
 for author in all_authors:
@@ -103,8 +103,8 @@ for author in all_authors:
 write_students_to.close()
 
 # IDs frequencues
-shutil.copyfile(glob.glob('*.csv')[0], 'IDs_output.csv')
-write_ids_to = open('IDs_output.csv', 'w')
+shutil.copyfile(glob.glob('*.csv')[0], 'freq_by_note.csv')
+write_ids_to = open('freq_by_note.csv', 'w')
 writer_ids_csv = csv.writer(write_ids_to, dialect = 'excel')
 
 for ids in all_ids:
@@ -114,8 +114,8 @@ write_ids_to.close()
 
 
 # Global words frequencies
-shutil.copyfile(glob.glob('*.csv')[0], 'global_output.csv')
-write_to = open('global_output.csv', 'w')
+shutil.copyfile(glob.glob('*.csv')[0], 'freq_summary.csv')
+write_to = open('freq_summary.csv', 'w')
 writer_csv = csv.writer(write_to, dialect = 'excel')
 
 for key in dic:
