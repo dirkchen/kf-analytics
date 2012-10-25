@@ -1,0 +1,13 @@
+1. Input
+A csv file (make sure the file does not contain any multibyte character,
+such as É, Í, etc.)
+
+2. Process
+You will be asked to type in:
+a) file name, e.g., data.csv
+b) column number of text to be analyzed, from 1 to any integer
+c) output format, pdf or png
+
+3. Output
+The output file will be a wordcloud in pdf or png.
+Please note that PDF will be more resizable than PNG.
